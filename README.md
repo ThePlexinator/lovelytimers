@@ -34,7 +34,7 @@ Gets rid of the timer with the given ID if found.<br>Returns: ```(bool)``` true 
 
 # Timer structure
 List of all attributes a timer object has.
-| Attributes            | Description                                                                           |
+| Attribute             | Description                                                                           |
 |-----------------------|---------------------------------------------------------------------------------------|
 | (string) .id          | The object's ID.                                                                      |
 | (number) .delay       | The amount of time the object takes for a repetition to complete.                     |
