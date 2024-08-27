@@ -31,3 +31,15 @@ Fully resets the timer with the given ID if found. Optionally pauses the timer i
 
 ```.destroy( (string) id )```
 Gets rid of the timer with the given ID if found.<br>Returns: ```(bool)``` true if the method ran successfully OR ```(bool)``` false if the timer w/ the given ID was not found.
+
+# Timer structure
+List of all attributes a timer object has.
+| Attributes            | Description                                                                           |
+|-----------------------|---------------------------------------------------------------------------------------|
+| (string) .id          | The object's ID.                                                                      |
+| (number) .delay       | The amount of time the object takes for a repetition to complete.                     |
+| (number) .repetitions | The maximum amount of reps the object must take before automatically deleting itself. |
+| (function) .func      | The function that automatically gets called upon a successful rep.                    |
+| (number) .dt          | The amount of seconds that has elapsed since the object's previous rep.               |
+| (number) .currentReps | The object's amount of successful reps thus far.                                      |
+| (bool) .paused        | If true, stops the object's ```.dt``` attribute from increasing.                      |
